@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #646464;
+}
+
+/*header 相關*/
+#header {
+	width: 850px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*content 相關*/
+#content {
+	background-image: url(images/content_bg.gif);
+	background-repeat: repeat-x;
+	width: 100%;
+	text-align: center;
+}
+#contentTop {
+	width: 838px;
+	height: 75px;
+	margin: 0 auto 0 auto;
+	padding-top: 3px;
+	padding-left: 12px;
+	text-align: left;
+}
+#contentTop p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000;
+	float: left;
+	margin-left: 8px;
+	margin-top: 45px;
+	margin-bottom: 0px;
+}
+#contentTop .more {
+	float: right;
+	margin-top: 7px;
+	margin-right: 7px;
+}
+#contentTop img {
+	float: left;
+}
+
+/*article 相關*/
+#article {
+	width: 830px;
+	margin: 10px auto 50px auto;
+	padding-top: 10px;
+	clear: both;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #000;
+	text-align: left;
+	background-image: url(images/article_bg.gif);
+	background-repeat: repeat-y;
+}
+#articleL {
+	width: 193px;
+	float: left;
+	padding-right: 7px;
+}
+#articleR {
+	margin-left: 210px;
+	line-height: 1.8em;
+	padding-left: 10px;
+}
+
+/*footer 相關*/
+#footer {
+	background-image: url(images/footer_bg.gif);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 67px;
+	text-align: center;
+	clear: both;
+}
+#footerBox {
+	width: 835px;
+	height: 67px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+#copyright {
+	float: left;
+	padding-top: 13px;
+	font-size: 11px;
+	color: #000;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 1.5em;
+}
+#footer li {
+	display: block;
+	float: right;
+	margin-top: 1px;
+	margin-left: 3px;
+	list-style-type: none;
+}
+#footer img {
+	border: 0;
+}
+.tab1, .tab1 a {
+	background-image: url(images/footer_menu1.gif);
+	background-repeat: no-repeat;
+	width: 109px;
+	height: 50px;
+	color: #000;
+	text-decoration: none;
+}
+.tab2, .tab2 a {
+	background-image: url(images/footer_menu2.gif);
+	background-repeat: no-repeat;
+	width: 109px;
+	height: 50px;
+	color: #000;
+	text-decoration: none;
+}
+.tab3, .tab3 a {
+	background-image: url(images/footer_menu3.gif);
+	background-repeat: no-repeat;
+	width: 109px;
+	height: 50px;
+	color: #000;
+	text-decoration: none;
+}
+.tab1 a:hover {
+	background-image: url(images/footer_menu1_over.gif);
+	background-repeat: no-repeat;
+	width: 109px;
+	height: 50px;
+}
+.tab2 a:hover {
+	background-image: url(images/footer_menu2_over.gif);
+	background-repeat: no-repeat;
+	width: 109px;
+	height: 50px;
+}
+.tab3 a:hover {
+	background-image: url(images/footer_menu3_over.gif);
+	background-repeat: no-repeat;
+	width: 109px;
+	height: 50px;
+}
+
+.floatleft{
+	float: left;
+	margin-right: 15px;
+}
+
+.clearboth{
+	clear: both;
+}
+
+.floatright{
+	float: right;
+}
+
+h1{
+	font-size: 20px;
+	color: #000;
+	background-image: url(./images/h1_bg.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	padding-bottom: 25px;
+}
+
+h2{
+	font-size: 16px;
+	color: #FF0000;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	border-left: 5px solid #FF0000;
+}
+
+h3{
+	font-size: 16px;
+	color: #000000;
+}
+
+.articleStep{
+	background-color: #7bf7f7;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #ffffff;
+	margin-right: 5px;
+	padding: 0px 5px;
+}
+
+a{
+	text-decoration: none;
+}

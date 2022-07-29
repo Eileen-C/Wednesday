@@ -1,0 +1,146 @@
+#header {
+	background-image: url(images/header.gif);
+	background-repeat: no-repeat;
+	height: 146px;
+	width: 800px;
+}
+#content {
+	background-image: url(images/content_bg.gif);
+	background-repeat: repeat-y;
+	width: 800px;
+	display          : flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content: flex-start;
+	align-items:stretch;
+	align-content:stretch;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #767676;
+	background-image: url(images/page_bg.jpg);
+	background-repeat: repeat-x;
+	margin: 0px;
+}
+img{
+	display: block;
+}
+#footer {
+	background-image: url(images/footer.gif);
+	background-repeat: no-repeat;
+	height: 52px;
+	width: 800px;
+}
+#contentL {
+	width: 245px;
+}
+#contentR {
+	width: 555px;
+}
+#listNew {
+	line-height: 1.5em;
+	margin-right: 30px;
+	margin-left: 50px;
+}
+#contentMain {
+	margin-right: 55px;
+	margin-left: 13px;
+	line-height: 2.5em;
+}
+#contentWorks {
+	width: 507px;
+	margin-left: 13px;
+	margin-top: 20px;
+	font-size: 11px;
+}
+#contentAbout {
+	width: 480px;
+	line-height: 2.5em;
+	margin-left: 13px;
+	margin-top: 20px;
+}
+.date {
+	color: #98722B;
+}
+a {
+	color: #6C0;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #6CF;
+}
+
+
+#content #contentL #listNew p {
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #000;
+	padding-top: 10px;
+}
+
+.topPhoto {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+.topPhoto2 {
+	margin-top: 15px;
+	margin-left: 19px;
+}
+.headerLogo {
+	float: left;
+	margin-top: 48px;
+	margin-left: 48px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.headerCopy {
+	float: left;
+	margin-top: 75px;
+	margin-left: 8px;
+	font-size: 11px;
+}
+.worksPic {
+	float: left;
+}
+.worksText {
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;
+	width: 280px;
+}
+.works {
+	width: 487px;
+	padding: 15px 20px 20px 0;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #98772B;
+	float: left;
+}
+.noborder {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.transition {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+}
+.transition:hover {
+	-webkit-opacity: 0.5;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+.subtitle {
+	font-size: 14px;
+	color: #167F9D;
+	font-weight: bold;
+}

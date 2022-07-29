@@ -1,0 +1,33 @@
+#header{
+    background-image: url(../images/header.gif);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 146px;
+}
+
+#content{
+    background-image: url(../images/content_bg.gif);
+    background-repeat: no-repeat;
+    width: 800px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+#contentL{
+    width: 245px;
+}
+
+#contentR{
+    width: 555px;
+}
+
+#footer{
+    background-image: url(../images/footer.gif);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 52px;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eileen">
+    <meta name="keywords" content="learn,html5,css">
+    <meta name="robots" content="index,follow">
+    <meta name="format-detection" content="telephone=no">
+    <title>test002</title>
+    <style type="text/css">
+        /* test002 */
+        .demo {
+            width: 680px;
+            border: 1px solid red;
+        }
+
+        .demo div {
+            width: 80px;
+            height: 50px;
+            border: 1px solid blue;
+            margin-top: 2px;
+            margin-left: 0;
+        }
+
+        .demo:hover>div {
+            /* 保留80px寬度給div */
+            margin-left: 600px;
+            transform: rotate(720deg);
+            background-color: skyblue;
+        }
+
+        .timing1 {
+            transition: margin-left 3s ease 1s,
+                transform 3s ease 0s;
+        }
+
+        .timing2 {
+            transition: all 3s ease-in 0s;
+        }
+
+        .timing3 {
+            transition: margin-left 3s ease-out 0s;
+        }
+
+        .timing4 {
+            transition: margin-left 3s ease-in-out 0s;
+        }
+
+        .timing5 {
+            transition: margin-left 3s linear 0s;
+        }
+
+        .timing6 {
+            transition: margin-left 3s cubic-bezier(0.1, 0.7, 1, 0.1) 0s;
+        }
+
+        .practice {
+            margin-top: 20px;
+            border: 1px solid sandybrown;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .practice div {
+            width: 80px;
+            height: 80px;
+            background-color: skyblue;
+            border: 2px solid deepskyblue;
+            border-radius: 10%;
+            margin-top: 2px;
+            margin-left: 0;
+        }
+
+        .practice:hover>div {
+            margin-top: 600px;
+            transform: rotate(120deg) scale(1.5) translateY(-20px);
+            background-color: skyblue;
+        }
+
+        #box1 {
+            transition: margin-top 3s ease 0s,
+                transform 3s ease 0s;
+        }
+
+        #box2 {
+            transition: all 3s ease-in 0s;
+        }
+
+        #box3 {
+            transition: margin-top 3s ease-out 0s;
+        }
+
+        #box3:hover {
+            transform: skew(30deg, 30deg);
+        }
+
+        #box4 {
+            transition: margin-top 3s ease-in-out 0s;
+        }
+
+        #box4:hover {
+            transform: scale(0.5);
+        }
+
+        #box5 {
+            transition: margin-top 3s linear 0s;
+        }
+
+        #box6 {
+            transition: margin-top 3s cubic-bezier(0.1, 0.7, 1, 0.1) 0s;
+        }
+
+
+        .practice2 {
+            margin-top: 50px;
+            border: 1px solid aquamarine;
+        }
+        
+        .container {
+            display: inline-block;
+            width: 150px;
+        }
+
+        h1 {
+            color: lightgray;
+            font-family: lato;
+            font-size: 20px;
+            font-weight: 200;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box {
+            border-radius: 50%;
+            height: 40px;
+            margin: 50px auto;
+            width: 40px;
+        }
+
+        .box:hover {
+            transform: scale(2);
+        }
+
+        .box1 {
+            background: #60D4C8;
+            transition: all 300ms;
+        }
+
+        .box2 {
+            background: #46BAAF;
+            transition: all 1s;
+        }
+
+        .box3 {
+            background: #3EA69B;
+            transition: all 3s;
+        }
+
+        .droplet{
+            background-color: skyblue;
+            border-radius: 5px 50%;
+            height: 100px;
+            margin: 150px auto;
+            transform-origin: left top;
+            transition: transform 3s;
+            width: 100px;
+        }
+        .droplet:hover{
+            transform: rotate(500deg);
+            background-color: deepskyblue;
+            transition: all 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- test002 -->
+    <div class="demo">
+        <div class="timing1">ease</div>
+        <div class="timing2">ease-in</div>
+        <div class="timing3">ease-out</div>
+        <div class="timing4">ease-in-out</div>
+        <div class="timing5">linear</div>
+        <div class="timing6">cubic-bezier</div>
+    </div>
+
+    <div class="practice">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+        <div id="box6"></div>
+    </div>
+
+
+    <div class="practice2">
+        <div class="container">
+            <h1>300ms</p>
+                <div class="box1 box"></div>
+        </div>
+        <div class="container">
+            <h1>1s</p>
+                <div class="box2 box"></div>
+        </div>
+        <div class="container">
+            <h1>3s</p>
+                <div class="box3 box"></div>
+        </div>
+    </div>
+
+    <div class="practice3">
+        <div class="droplet"></div>
+    </div>
+</body>
+
+</html>

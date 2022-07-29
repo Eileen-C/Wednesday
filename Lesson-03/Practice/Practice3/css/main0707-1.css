@@ -1,0 +1,37 @@
+#header{
+    background-image: url(../images1/header_bg.jpg);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 129px;
+}
+
+#content{
+    background-image: url(../images1/content_bg.jpg);
+    background-repeat: repeat-y;
+    width: 800px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    /* content不設定高度，用內容撐高度就好 */
+}
+
+#contentL{
+    width: 245px;
+}
+
+#contentM{
+    width: 450px;
+}
+
+#contentR{
+    width: 105px;
+}
+
+#footer{
+    background-image: url(../images1/footer_bg.jpg);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 52px;
+}

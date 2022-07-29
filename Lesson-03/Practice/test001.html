@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flex testing</title>
+    <style type="text/css">
+        .fontset{
+            font-size: 200px;
+            line-height: 200px;
+        }
+        .content{
+            background-color: skyblue;
+            width: 800px;
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            /* 預設為row */
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
+        }
+        .item{
+            background-color: lemonchiffon;
+            width: 98px;
+            border: 1px solid deepskyblue;  
+        }
+
+        .alignSelfEnd{
+            align-self: flex-end;
+        }
+
+        .alignSelfStart{
+            align-self: start;
+        }
+
+        .orderCt1{
+            order: 1;
+            /* order:0-N | default為0 | 控制區塊順序位子*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="item orderCt1">
+            <h2>A1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde excepturi, in sint libero odio suscipit doloribus nulla neque mollitia.</p>
+        </div>
+        <div class="item alignSelfStart">
+            <h2>A2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde excepturi, in sint libero odio suscipit doloribus nulla neque mollitia.</p>
+        </div>
+        <div class="item">
+            <h2>A3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde excepturi, in sint libero odio suscipit doloribus nulla neque mollitia.</p>
+        </div>
+        <div class="item">
+            <h2>A4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde excepturi, in sint libero odio suscipit doloribus nulla neque mollitia.</p>
+        </div>
+        <div class="item alignSelfEnd">
+            <h2>A5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde excepturi, in sint libero odio suscipit doloribus nulla neque mollitia.</p>
+        </div>
+        <div class="item">
+            <h2>A6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde excepturi, in sint libero odio suscipit doloribus nulla neque mollitia.</p>
+        </div>
+        <div class="item">
+            <h2>A7</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde excepturi, in sint libero odio suscipit doloribus nulla neque mollitia.</p>
+        </div>
+        <div class="item">
+            <h2>A8</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde excepturi, in sint libero odio suscipit doloribus nulla neque mollitia.</p>
+        </div>
+    </div>
+</body>
+</html>

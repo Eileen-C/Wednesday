@@ -1,0 +1,143 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>可愛網頁設計Cute Design Studio</title>
+  <link href="website0302.css" rel="stylesheet" type="text/css" />
+  <!-- gotop會用到的jQuery函式庫 -->
+  <script language="javascript" src="./jquery.min.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript">
+    $(function () {
+      $('body').append("<img  id='goTopButton'  style='display:none;z-index:5;cursor :pointer;top:100px; position:fixed;' title='回到頂端'>");
+      var img = "bntop02.png",
+        location = 0.8, //按鈕出現在螢幕的高度
+        right = 5,      //距離右邊的px距離
+        opacity = 0.3,  //圖片透明度
+        speed = 500,    //回卷速度
+        $button = $('#goTopButton'),
+        $body = $(document),
+        $win = $(window);
+      $button.attr("src", img);
+
+      function goTopMove() {
+        var scrollH = $body.scrollTop(),
+          winH = $win.height(),
+          css = { "top": winH * location + "px", "position": "fixed", "right": right, "opacity": opacity };
+        if (scrollH > 20) {
+          $button.css(css);
+          $button.fadeIn("slow");
+        }
+        else {
+          $button.fadeOut("slow");
+        }
+      }
+
+      $win.on({
+        scroll: function () { 
+          goTopMove();
+          //test();
+        },
+        resize: function () { goTopMove()}
+      });
+
+      //測試函數test()
+      // function test(){
+      //   console.log("在chrome console印出這段文字");
+      // };
+      $button.on({
+        mouseover: function () { $button.css("opacity", 1); },
+        mouseout: function () { $button.css("opacity", opacity); },
+        click: function () {
+          css={"transform":"rotate(720deg)", "transition":"transform 1s ease 0s"};
+          $button.css(css); 
+          $("html,body").animate({ scrollTop: 0, speed }); }
+      });
+    });
+  </script>
+
+  <div id="header"><a href="index.html"><img src="images1/main_logo.jpg" alt="logo" width="167" height="101"
+        class="headerLogo noborder transition" /></a><span class="headerCopy">Copyright © Cute Design Studio All rights
+      reserved.</span><a href="mailto:service@flag.com.tw"><img src="images1/email.png" alt="聯絡我們" width="150"
+        height="51" class="email" /></a></div>
+  <div id="content">
+    <div id="contentL">
+      <div id="sidemenu"><a href="about.html"><img src="images1/about_btn.png" alt="關於我們" width="162" height="144"
+            class="noborder transition" /></a><a href="works.html"><img src="images1/works_btn.png" alt="作品展示"
+            width="162" height="144" class="noborder transition" /></a></div>
+      <div id="listNew">
+        <p><span class="date">07-01</span><br />
+          <a href="http://www.flag.com.tw" target="_blank">Cute Design 工作室參與的新書 「正確學會 Dreamweaver CS6 的 16 堂課」
+            出版了，詳細請連此</a>
+        </p>
+        <p><span class="date">05-20</span><br />
+          <a href="works.html#bags">Cute Bags 獨家設計手提袋新上架，請洽各網路商店</a>
+        </p>
+        <p><span class="date">05-01</span><br />
+          <a href="works.html#tshirts">Cute Design 個性 T 恤上架，請洽各網路商店</a>
+        </p>
+      </div>
+    </div>
+    <div id="contentR"> <img src="images1/titles_works.jpg" width="500" height="242" class="topPhoto" />
+      <div id="contentMain">
+        <div id="booktop">
+          <p><img src="./images/book5/book_conver.png" alt=""></p>
+          <h3>CITIx60: 台北</h3>
+          <p>
+            作者：Viction Workshop Ltd.<br>
+            出版社：三聯書店（香港）有限公司<br>
+            ISBN：9789887774617<br>
+            附件：無附光碟片<br>
+            定價：400元
+          </p>
+        </div>
+        <div id="bookdata">
+          <h1>
+            60位品味人士帶領你遊歷台北美味的小吃與豐富的創意文化
+          </h1>
+          <p>
+            台北熱情親切，不管你來自何方，這個城市都會拿出便宜美味的小吃與豐富的創意文化款待你。這裡適合遊走，各區域都有獨特面貌，僅需搭乘捷運或騎單車，就能輕鬆來往於繁華市區與迷人山水之間。台北兼容並蓄，保存完好的中國與日本文化影響，與當下蓬勃發展的藝術、設計、生活零售領域，共同譜出令人輕易愛上的城市魅力。
+          </p>
+          <p><img src="./images/book5/book5-1.jpg" alt="" class="floatleft">以五大角度: (1)建築地標 (2)藝術場域 (3)市集商舖 (4)餐飲勝地
+            (5)娛樂場所, 深度探索台灣。輕便口袋裝、全彩內頁、清晰明快的導覽文字與資訊, 帶領旅人快速發現台北最引人入勝的魅力與文化底蘊, 獨到的景點推薦讓旅人更精準地體驗台北人的品味生活。
+          </p>
+          <div class="clearboth"></div>
+          <h2>《CITIx60：台北》充滿創造力的生活</h2>
+          <p><img src="./images/book5/book5-2.jpg" alt=""
+              class="floatleft">無論是壯闊的都市地景，還是當地人訴說的隻言片語，台北無處不在的是人們對創造力的追求。60X60為你引領至60位品味人士流連忘返的鑑賞觸覺源頭。
+          </p>
+          <p><img src="./images/book5/book5-3.jpg" alt="" class="floatright"></p>
+          <div class="clearboth"></div>
+          <p><img src="./images/book5/book5-4.jpg" alt="" class="floatleft">
+            地標與建築：漫遊台北的古舊建築，感受這裡結合中日、充滿溫度的歷史。從圖書館、大學校舍到園林設計，都能看到台北建築喜與自然融和的特色。
+          </p>
+          <div class="clearboth"></div>
+          <p><img src="./images/book5/book5-5.jpg" alt="" class="floatleft">
+            文化現場與藝術空間：隱藏於幽恬巷弄中或舊工廠內，各界藝文人士為自己熱愛的領域開闢的大小型展演空間，靜靜滋養着台北的文化生活。
+          </p>
+          <div class="clearboth"></div>
+          <p><img src="./images/book5/book5-6.jpg" alt="" class="floatleft">
+            市集與商舖：要真正體驗台北生活，可到各式傳統市場，或在小店購買各種工匠製品及以在地農產製作的好物，帶着只屬於台灣的美好回憶回家。
+          </p>
+          <div class="clearboth"></div>
+          <p><img src="./images/book5/book5-7.jpg" alt="" class="floatleft">
+            餐廳與咖啡室：精品咖啡於台北生機勃勃，咖啡室別樹一幟的格局令人流連忘返。不論是台式或西式料理，都因為善用新鮮的本地食材而格外好吃。
+          </p>
+          <div class="clearboth"></div>
+          <p><img src="./images/book5/book5-8.jpg" alt="" class="floatleft">
+            夜生活：台北的夜晚多姿多采。你可選擇安靜度過，或與三五知己看看夜景、試試本地精釀，亦可到夜店狂歡，或以各式夜市小吃填滿肚子。
+          </p>
+          <div class="clearboth"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+
+</body>
+
+</html>

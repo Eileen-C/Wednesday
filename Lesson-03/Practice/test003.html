@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eileen">
+    <meta name="keywords" content="learn,html5,css">
+    <meta name="robots" content="index,follow">
+    <meta name="format-detection" content="telephone=no">
+    <title>css testing</title>
+    
+    <style type="text/css">
+        *{
+            /* 全域：權重0-0-0-0；!important權重：1-0-0-0 */
+            color: tomato; 
+        }
+        .container{
+            background: aqua;
+        }
+        div{
+            width: 100px;
+            text-align: center;
+            background-color: pink;
+            height: 50px;
+            margin-bottom: 30px;
+            /* 權重0-0-0-1 */
+            color: darkcyan;
+        }
+        h1{
+            font-size: 26px;
+            background-color: bisque;
+        }
+
+        .item{
+            /* 權重0-0-1-0 */
+            color: lightgreen;
+        }
+
+        #colorset{
+            /* 權重0-1-0-0 */
+            color: dodgerblue;
+        }
+        div.item{
+            /* 權重0-0-1-1 */
+            color: darksalmon;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="test004.css">
+</head>
+<body>
+    <h1>測試同權重的CSS順序：</h1>
+    <section class="container">
+        <p>文字0</p>
+        <div>文字1</div>
+        <div class="item">文字2</div>
+        <div id="colorset" class="item">文字3</div>
+        <!-- 1-0-0-0 -->
+        <div id="colorset" class="item" style="color: blanchedalmond;">文字4</div>
+    </section>
+</body>
+</html>

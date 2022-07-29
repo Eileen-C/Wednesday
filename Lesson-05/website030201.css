@@ -1,0 +1,216 @@
+#header {
+	background-image : url(images1/header_bg.jpg);
+	background-repeat: no-repeat;
+	height           : 129px;
+	width            : 800px;
+}
+
+#content {
+	background-image : url(images1/content_bg.jpg);
+	background-repeat: repeat-y;
+	width            : 800px;
+	float            : left;
+}
+
+
+.topPhoto {
+	margin-top   : 10px;
+	margin-bottom: 20px;
+	margin-left  : 10px;
+}
+
+body {
+	font-family      : Arial, Helvetica, sans-serif;
+	font-size        : 12px;
+	color            : #767676;
+	background-image : url(images1/cute_design_bg.png);
+	background-repeat: repeat-x;
+	margin-top       : 28px;
+	margin-right     : 0px;
+	margin-bottom    : 0px;
+	margin-left      : 0px;
+}
+
+#footer {
+	background-image : url(images1/footer_bg.jpg);
+	background-repeat: no-repeat;
+	height           : 52px;
+	width            : 800px;
+	clear            : left;
+}
+
+#contentL {
+	float: left;
+	width: 245px;
+}
+
+#contentR {
+	margin-left: 245px;
+	width      : 555px;
+}
+
+.floatleft {
+	float       : left;
+	margin-right: 15px;
+}
+
+#listNew {
+	line-height : 1.5em;
+	margin-right: 30px;
+	margin-left : 50px;
+}
+
+#contentMain {
+	line-height  : 1.5em;
+	padding-right: 40px;
+}
+
+.clearboth {
+	clear: both;
+}
+
+.floatright {
+	float: right;
+}
+
+h1 {
+	font-size          : 20px;
+	color              : #000;
+	background-image   : url(images/h1_bg3.png);
+	background-repeat  : repeat-x;
+	padding-bottom     : 25px;
+	background-position: bottom;
+}
+
+h2 {
+	font-size        : 16px;
+	color            : #F00;
+	margin-top       : 15px;
+	margin-bottom    : 20px;
+	padding-left     : 10px;
+	margin-left      : 210px;
+	border-left-width: 10px;
+	border-left-style: solid;
+	border-left-color: #F00;
+}
+
+h3 {
+	font-size: 16px;
+	color    : #000;
+}
+
+.date {
+	color: #EA5413;
+}
+
+a {
+	color          : #669933;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color          : #ED601B;
+}
+
+
+#content #contentL #listNew p {
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #000;
+	padding-top     : 10px;
+}
+
+.headerLogo {
+	float              : left;
+	margin-top         : 20px;
+	margin-left        : 48px;
+	border-top-style   : none;
+	border-right-style : none;
+	border-bottom-style: none;
+	border-left-style  : none;
+}
+
+.headerCopy {
+	float      : left;
+	margin-top : 100px;
+	margin-left: 25px;
+	font-size  : 11px;
+}
+
+#sidemenu {
+	background-image: url(images1/menu_bg.jpg);
+	height          : 302px;
+	width           : 180px;
+	margin-left     : 40px;
+	padding-left    : 13px;
+}
+
+.worksPic {
+	float: left;
+}
+
+.worksTitle {
+	color      : #E75411;
+	font-size  : 14px;
+	margin-left: 200px;
+	font-weight: bold;
+}
+
+.worksText {
+	float      : left;
+	margin-left: 15px;
+	margin-top : 10px;
+	width      : 280px;
+}
+
+.works {
+	width  : 487px;
+	padding: 15px 20px 20px 0;
+	float  : left;
+}
+
+.noborder {
+	border-top-style   : none;
+	border-right-style : none;
+	border-bottom-style: none;
+	border-left-style  : none;
+}
+
+.transition {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition   : all 1s ease 0s;
+	-ms-transition    : all 1s ease 0s;
+	-o-transition     : all 1s ease 0s;
+	transition        : all 1s ease 0s;
+}
+
+.transition:hover {
+	-webkit-opacity: 0.5;
+	-moz-opacity   : 0.5;
+	opacity        : 0.5;
+}
+
+.subtitle {
+	font-size  : 14px;
+	color      : #EF4E08;
+	font-weight: bold;
+	margin-top : 0px;
+}
+
+.email {
+	margin-top : 65px;
+	margin-left: 100px;
+}
+
+#contentR #contentMain a{
+	color: #00a0e9;
+	text-decoration: none;
+	border-bottom: 1px dotted lightblue;
+}
+
+#contentR #contentMain a:hover{
+	color: #ff0000;
+	border: 1px solid #ff0000;
+}
+

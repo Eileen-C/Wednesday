@@ -1,0 +1,118 @@
+@charset "utf-8";
+#header {
+	background-image: url(images/header.gif);
+	background-repeat: no-repeat;
+	height: 146px;
+	width: 800px;
+}
+#content {
+	background-image: url(images/content_bg.gif);
+	background-repeat: repeat-y;
+	width: 800px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content: flex-start;
+	align-items:stretch;
+	align-content:stretch;
+}
+
+#footer {
+	background-image: url(images/footer.gif);
+	background-repeat: no-repeat;
+	height: 52px;
+	width: 800px;
+}
+#contentL {
+	width: 245px;
+}
+#contentR {
+	width: 555px;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #767676;
+	background-image: url(./images/page_bg.jpg);
+	background-repeat: repeat-x;
+	margin: 0;
+}
+
+img{
+	display: block;	
+}
+
+.headerLogo{
+	float: left;
+	margin-top: 48px;
+	margin-left: 48px;
+}
+
+.headerCopy{
+	float: left;
+	margin-top: 75px;
+}
+
+#listNew{
+	margin-left: 50px;
+	margin-right: 30px;
+	line-height: 2em;
+}
+
+#content #contentL #listNew p{
+	border-top: 1px dotted #000000;
+	padding-top: 10px;
+}
+
+.topPhoto{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+#contentMain{
+	margin-left: 13px;
+	margin-right: 55px;
+	line-height: 2.5em;
+}
+
+.subtitle{
+	color: #c7ab76;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* 練習 ppt60 */
+#contentR #contentMain img{
+	border: 3px dotted navajowhite;
+}
+
+a{
+	text-decoration: none;
+	color: deepskyblue;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: skyblue;
+}
+
+a:active{
+	font-size: 15px;
+	color: navajowhite;
+}
+
+.transition{
+	-webkit-transition: opacity 1s ease 0s;
+	-moz-transition: opacity 1s ease 0s;
+	-ms-transition: opacity 1s ease 0s;
+	-o-transition: opacity 1s ease 0s;
+	transition: opacity 1s ease 0s;
+}
+
+.transition:hover{
+	-webkit-opacity: 0.5;
+	-moz-opacity: 0.5;
+	opacity:0.5;
+}
