@@ -1,0 +1,292 @@
+@charset "utf-8";
+body {
+	background-color: #63acca;
+	background-attachment: fixed;
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	margin: 0px;
+	font-size: 12px;
+	color: #999999;
+	line-height: 1.8em;
+}
+
+/*網站主架構*/
+#bgzone {
+	background: url(images/shadow_bg.png) repeat-y;
+	width: 870px;
+	padding: 0;
+	margin: 0 auto;
+}
+#header {
+	width: 850px;
+	padding: 0;
+	margin: 0 auto;
+}
+#header #logo {
+	margin: 8px 20px 8px 10px;
+}
+#header #banner {
+	margin-bottom: 20px;
+	border: 1px solid #809ba6;
+}
+#mainContent {
+	width: 850px;
+	padding: 0;
+	margin: 0 auto;
+	background: url(images/content_bg.gif) repeat-y;
+}
+#sideR {
+	float: right;
+	width: 244px;
+	text-align: right;
+}
+#sideL {
+    margin-right: 244px;
+}
+#footer {
+	clear: both;
+	width: 850px;
+	background: url(images/footer_bg.gif) repeat;
+	border-top: 1px dashed #C9C9C9;
+	text-align: center;
+	margin: 0 auto;
+	padding: 12px 0;
+	color: #5F5F5F;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+}
+
+/*選單*/
+#menu {
+	position: relative;
+	width: 235px;
+	padding: 0;
+	margin: 0 0 3px 0;
+	float: right;
+}
+#menu li {
+	display: block;
+	width: 235px;
+	height: 47px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#menu li a{
+	display: block;
+	width: 235px;
+	height: 47px;
+}
+#menu li a span{
+	position: absolute;
+	top: -1000px;
+	display: block;
+}
+#menu li.about a{
+	background: url(images/menu1.gif) no-repeat;
+}
+#menu li.about a:hover{
+	background: url(images/menu1_hover.gif) no-repeat;
+}
+#menu li.photo a{
+	background: url(images/menu2.gif) no-repeat;
+}
+#menu li.photo a:hover{
+	background: url(images/menu2_hover.gif) no-repeat;
+}
+#menu li.dl a{
+	background: url(images/menu3.gif) no-repeat;
+}
+#menu li.dl a:hover{
+	background: url(images/menu3_hover.gif) no-repeat;
+}
+
+/*團友攝影精選區*/
+.right_title {
+	clear: both;
+	background-color: #EBEBEB;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 1px dotted #999;
+	border-bottom: 1px dotted #999;
+	color: #666;
+	text-align: center;
+}
+#photozone {
+	border-bottom: 1px dotted #999;
+	text-align: left;
+	padding: 13px;
+}
+#photozone p {
+	margin: 7px 0 -3px 0;
+}
+#photozone img {
+	border: 1px solid #999;
+}
+
+/*首頁放圖片用之表格的樣式*/
+.tourImageTable {
+	width: 580px;
+	margin-left: 5px;
+}
+.tourImageTable td {
+	padding: 20px 0 13px 0;
+	text-align: center;
+}
+
+/*首頁放行程列表及行程內容用之表格的樣式*/
+.tourTable {
+	width: 595px;
+	border-collapse: collapse;
+}
+.tourTable td {
+	padding: 15px;
+	text-align: left;
+	vertical-align: top;
+}
+.tourTable .list {
+	background: #D2E7FF;
+	width: 150px;
+}
+.tourTable h1 {
+	margin: 5px 0;
+	font-size: 20px;
+	color: #69C;
+	border-bottom: 1px dashed #69C;
+	padding-bottom: 2px;
+}
+
+/*首頁放行程列表用之表格的樣式*/
+.tourListTable td {
+	padding: 0;
+}
+.tourListTable ul {
+	list-style-image: url(images/icon1.gif);
+	list-style-type: none;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.tourListTable li a{
+	color: #39C;
+	text-decoration: none;
+	border-bottom: 1px dotted #39C;
+}
+.tourListTable li a:hover{
+	background: #09C;
+	color: #FFF;
+	border: 2px solid #09C;
+}
+
+/*首頁放行程內容用之表格的樣式*/
+.tourDetailTable  {
+	width: 100%;
+	border-top: 1px dotted #6C9;
+	border-left: 1px dotted #6C9;
+	border-collapse: collapse;
+	color: #6C9;
+}
+.tourDetailTable td {
+	border-bottom: 1px dotted #6C9;
+	border-right: 1px dotted #6C9;
+	padding: 7px;
+}
+.tourDetailTable ul {
+	padding: 0;
+	margin: 0 0 0 20px;
+}
+.tourDetailTable .title {
+	width: 60px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/*攝影團隊*/
+#contentAbout {
+	width: 590px;
+	border-right: 8px solid #FF7F7F;
+	text-align: center;
+}
+#people1, #people2 {
+	text-align: left;
+	margin: 5px 10px 0 10px;
+}
+#people1 img, #people2 img {
+	border: 1px solid #CCCCCC;
+}
+#people1 h2, #people2 h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #B7D680;
+	margin: 0;
+}
+#contentAbout table {
+	width: 570px;
+}
+#contentAbout td {
+	padding: 5px;
+}
+
+/*攝影作品*/
+#contentPhoto {
+	width: 590px;
+	border-right: 8px solid #FFC17F;
+	text-align: center;
+}
+.photolist {
+	float: left;
+	width: 175px;
+	height: 135px;
+	margin: 0 0 20px 15px;
+	padding-top: 30px;
+	background: url(images/photo_bg.gif) no-repeat;
+}
+.photolist p {
+	margin: 0;
+}
+
+/*桌布下載*/
+#contentDL {
+	width: 570px;
+	border-right: 8px solid #B7D680;
+	text-align: center;
+	padding: 0 10px 10px 10px;
+}
+#contentDL table {
+	width: 570px;
+}
+#contentDL table .right {
+	width: 455px;
+	text-align: left;
+}
+#contentDL table .left {
+	text-align: left;
+	vertical-align: top;
+}
+.dlsize, .dlsize a{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #B7D680;
+	line-height: 1.5em;
+}
+#contentDL table p {
+	margin: 8px 0;
+}
+
+/*其他設定*/
+.sideTitle {
+	width: 603px;
+	height: 65px;
+}
+img {
+	border: none;
+}
+.clearboth {
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+}

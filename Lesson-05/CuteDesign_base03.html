@@ -6,9 +6,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>《龍貓》（日語：となりのトトロ）</title>
   <link href="website0303.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.min.js"></script>
 </head>
 
 <body>
+  <script src="./gotop_base03.js"></script>
   <div id="header"><a href="index.html"><img src="images1/main_logo.jpg" alt="logo" width="167" height="101"
         class="headerLogo noborder transition" /></a><span class="headerCopy">Copyright © Cute Design Studio All rights
       reserved.</span><a href="mailto:service@flag.com.tw"><img src="images1/email.png" alt="聯絡我們" width="150"
@@ -34,7 +36,17 @@
     <div id="contentR"> <img src="images1/titles_works.jpg" width="500" height="242" class="topPhoto" />
       <div id="contentMain">
         <div id="bookTop">
-          <p><img src="./images/totoro/moviePoster.jpeg" alt="moviePoster" class=""></p>
+          <p>
+            <img src="./images/totoro/moviePoster.jpeg" alt="moviePoster" class="">
+            <img src="./images/icon_twitter.png" class="styleIcon" alt="推薦本文到twitter"
+              onclick="void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat (encodeURIComponent(location.href))));">
+            <img src="./images/icon_line.png" class="styleIcon" alt="推薦本文到line"
+              onclick="void(window.open('https://social-plugins.line.me/lineit/share?url={encodeURIComponent(URL)}'));">
+            <img src="./images/icon_plurk.png" class="styleIcon" alt="推薦本文到plurk"
+              onclick="void(window.open('http://www.plurk.com/?qualifier=shares&status=' .concat(encodeURIComponent(location.href)) .concat(' ') .concat('(') .concat(encodeURIComponent(document.title)) .concat(')')));">
+            <img src="./images/icon_facebook.png" class="styleIcon" alt="推薦本文到facebook"
+              onclick="void(window.open('https://www.facebook.com/dialog/feed?app_id=90376669494&link='+encodeURIComponent(location.href)+'&name=test&description=test&redirect_uri='+encodeURIComponent(location.href)+'&display=popup&show_error=yes'));">
+          </p>
           <h1>
             《龍貓》（日語：となりのトトロ）
           </h1>

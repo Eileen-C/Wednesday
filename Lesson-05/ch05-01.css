@@ -200,3 +200,7 @@ h3{
 a{
 	text-decoration: none;
 }
+
+.styleIcon{
+	cursor: pointer;
+}

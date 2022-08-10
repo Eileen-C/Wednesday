@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PhotoTour 旅遊攝影網 :: 歡迎愛旅遊愛攝影的你 ::</title>
+<link href="ex06-01.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+  function effectFadeTo(targetElement,duration,from,to){
+    $(targetElement).fadeTo(duration/2,from);
+    $(targetElement).fadeTo(duration/2,to);
+  };
+</script>
+<!-- lightBox0.5版 -->
+<!-- <script type="text/javascript" src="./js/jquery.lightbox-0.5.js"></script>
+<link rel="stylesheet" href="./css/jquery.lightbox-0.5.css">
+<script type="text/javascript">
+  $(function(){
+    $("#contentPhoto a").lightBox({maxHeight:$(window).height()*0.9,maxwidth:$(window).width()*0.9});
+  });
+</script> -->
+<link rel="stylesheet" href="./fancybox-2.1.7/source/jquery.fancybox.css">
+<script type="text/javascript" src="./fancybox-2.1.7/source/jquery.fancybox.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $(".fancybox").fancybox();
+  });
+</script>
+
+</head>
+<body>
+<div id="bgzone">
+  <div id="header"><a href="index.html"><img src="images/logo.gif" alt="PhotoTour 旅遊攝影網" width="336" height="80" id="logo" /></a><img src="images/banner.gif" alt="Banner" width="468" height="60" id="banner" /></div>
+  <div id="mainContent">
+    <div id="sideR">
+      <ul id="menu">
+        <li class="about"><a href="about.html"><span>ABOUT US</span></a></li>
+        <li class="photo"><a href="photo.html"><span>PORTFOLIO</span></a></li>
+        <li class="dl"><a href="dl.html"><span>DOWNLOAD</span></a></li>
+      </ul>
+      <div class="right_title">團友攝影成果精選特輯</div>
+      <div id="photozone"><img src="images/photo_pickup.gif" width="215" height="140" alt="團友精選照片" />
+        <p>在專業攝影團隊的指導與帶領下，加上愉悅放鬆的旅遊氣氛，團友們拍出的照片格外令人驚艷與感動，在經過照片所屬團友的同意下，我們特別選出優秀的作品讓大家欣賞，也歡迎愛攝影愛旅遊的你，參加我們所舉辦的攝影旅遊活動。</p>
+      </div>
+    </div>
+    <div id="sideL">
+      <div class="sideTitle"><img src="images/menu_title2.gif" width="603" height="65" alt="攝影作品" /></div>
+      <div id="contentPhoto">
+        <div class="photolist">
+          <!-- effectFadeTo淡入淡出，1000豪秒內從0.3轉到1不透明 -->
+          <p>
+            <a href="./images/photos/001.jpg" title="BlueSky" rel="group" class="fancybox">
+            <img src="./images/photos/001s.jpg" alt="BlueSky" onmouseover="effectFadeTo(this,1000,0.3,1);"></a>
+          </p>
+          <p>BlueSky</p>
+        </div>
+        <div class="photolist">
+          <p>
+            <a href="./images/photos/002.jpg" title="三角守護者" rel="group" class="fancybox">
+            <img src="./images/photos/002s.jpg" alt="三角守護者" onmouseover="effectFadeTo(this,1000,0.3,1);"></a>
+          </p>
+          <p>三角守護者</p>
+        </div>
+        <div class="photolist">
+          <p>
+            <a href="./images/photos/003.jpg" title="生活" rel="group" class="fancybox">
+            <img src="./images/photos/003s.jpg" alt="生活" onmouseover="effectFadeTo(this,1000,0.3,1);"></a>
+          </p>
+          <p>生活</p>
+        </div>
+        <div class="photolist">
+          <p>
+            <a href="./images/photos/004.jpg" title="忙錄" rel="group" class="fancybox">
+            <img src="./images/photos/004s.jpg" alt="忙錄" onmouseover="effectFadeTo(this,1000,0.3,1);"></a>
+          </p>
+          <p>忙錄</p>
+        </div>
+        <div class="photolist">
+          <p>
+            <a href="./images/photos/005.jpg" title="擺在眼前的鮮美" rel="group" class="fancybox">
+            <img src="./images/photos/005s.jpg" alt="擺在眼前的鮮美" onmouseover="effectFadeTo(this,1000,0.3,1);"></a>
+          </p>
+          <p>擺在眼前的鮮美</p>
+        </div>
+        <div class="photolist">
+          <p>
+            <a href="./images/photos/006.jpg" title="凝望" rel="group" class="fancybox">
+            <img src="./images/photos/006s.jpg" alt="凝望" onmouseover="effectFadeTo(this,1000,0.3,1);"></a>
+          </p>
+          <p>凝望</p>
+        </div>
+        <div class="photolist">
+          <p>
+            <a href="./images/photos/007.jpg" title="襌的奧義" rel="group" class="fancybox">
+            <img src="./images/photos/007s.jpg" alt="襌的奧義" onmouseover="effectFadeTo(this,1000,0.3,1);"></a>
+          </p>
+          <p>襌的奧義</p>
+        </div>
+        <div class="photolist">
+          <p>
+            <a href="./images/photos/008.jpg" title="花的姿態" rel="group" class="fancybox">
+            <img src="./images/photos/008s.jpg" alt="花的姿態" onmouseover="effectFadeTo(this,1000,0.3,1);"></a>
+          </p>
+          <p>花的姿態</p>
+        </div>
+        <div class="photolist">
+          <p>
+            <a href="./images/photos/009.jpg" title="莊嚴" rel="group" class="fancybox">
+            <img src="./images/photos/009s.jpg" alt="莊嚴" onmouseover="effectFadeTo(this,1000,0.3,1);"></a>
+          </p>
+          <p>莊嚴</p>
+        </div>
+        <br clear="left">
+      </div>
+    </div>
+  </div>
+  <div id="footer" onclick="effectFadeTo(this,2000,0.3,0.3);">PhotoTour 攝影旅遊網　   100 台北市中正區杭州南路一段15-1號19樓　  TEL: 02-2396-3257<br />
+    Copyright  ©  PhotoTour. All rights reserved.</div>
+</div>
+</body>
+</html>

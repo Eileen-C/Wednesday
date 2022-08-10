@@ -23,10 +23,6 @@ body {
 	margin-left: 0px;
 }
 
-
-
-
-
 #footer {
 	background-image: url(images1/footer_bg.jpg);
 	background-repeat: no-repeat;
@@ -176,4 +172,9 @@ h3 {
 	font-size: 16px;
 	color    : orangered;
 	padding-top: 10px;
+}
+
+.styleIcon{
+	margin-left: 10px;
+	cursor: pointer;
 }
