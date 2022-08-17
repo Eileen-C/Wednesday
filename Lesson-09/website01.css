@@ -40,36 +40,36 @@
   border-color: deepskyblue;
 }
 
-.btn-primary:hover {
+.btn-skyblue:hover {
   color: #fff;
   background-color: skyblue;
   border-color: skyblue;
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-skyblue:focus, .btn-skyblue.focus {
   box-shadow: 0 0 0 0.2rem rgba(59, 142, 231, 0.5);
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-skyblue.disabled, .btn-skyblue:disabled {
   color: #fff;
   background-color: dodgerblue;
   border-color: dodgerblue;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
+.btn-skyblue:not(:disabled):not(.disabled):active, .btn-skyblue:not(:disabled):not(.disabled).active,
+.show > .btn-skyblue.dropdown-toggle {
   color: #fff;
   background-color: dodgerblue;
   border-color: dodgerblue;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
+.btn-skyblue:not(:disabled):not(.disabled):active:focus, .btn-skyblue:not(:disabled):not(.disabled).active:focus,
+.show > .btn-skyblue.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
-/* index.php video */
-#video-background{
+/* index.php video index01.php iframe*/
+#video-background,.video-background iframe {
     width: auto;
     height: auto;
     min-width: 100%;
@@ -99,4 +99,26 @@
 
 .margintop-30 .btn.btn-warning{
     color: #fff;
+}
+
+.jumbotron{
+  color: #fff;
+  background: url(./images/pic51.jpg);
+  background-attachment: fixed;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  min-height: 1365px;
+  min-width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem 4rem 2rem;
+}
+
+body{
+  font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#production{
+  padding-top: 40px;
 }
