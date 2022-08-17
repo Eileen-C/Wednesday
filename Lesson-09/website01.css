@@ -40,30 +40,63 @@
   border-color: deepskyblue;
 }
 
-.btn-skyblue:hover {
+.btn-primary:hover {
   color: #fff;
   background-color: skyblue;
   border-color: skyblue;
 }
 
-.btn-skyblue:focus, .btn-skyblue.focus {
+.btn-primary:focus, .btn-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(59, 142, 231, 0.5);
 }
 
-.btn-skyblue.disabled, .btn-skyblue:disabled {
+.btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
   background-color: dodgerblue;
   border-color: dodgerblue;
 }
 
-.btn-skyblue:not(:disabled):not(.disabled):active, .btn-skyblue:not(:disabled):not(.disabled).active,
-.show > .btn-skyblue.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: dodgerblue;
   border-color: dodgerblue;
 }
 
-.btn-skyblue:not(:disabled):not(.disabled):active:focus, .btn-skyblue:not(:disabled):not(.disabled).active:focus,
-.show > .btn-skyblue.dropdown-toggle:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+/* index.php video */
+#video-background{
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+}
+
+.video-caption{
+    margin-top: 20%;
+}
+
+.video-caption.text-center h1{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.margintop-30{
+    margin-top: 30px;
+}
+
+.margintop-30 .btn.btn-warning{
+    color: #fff;
 }

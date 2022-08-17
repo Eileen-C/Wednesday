@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap 4.6.2 css -->
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/test001.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-lg-3 bg-color_powderblue">大型螢幕的排版col-lg-3</div>
+            <div class="col-9 col-lg-9 bg-color_deepskyblue">大型螢幕的排版col-lg-9</div>           
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-color_gray">大型螢幕的排版col-lg-3</div>
+            <div class="col-lg-9 bg-color_aqua">大型螢幕的排版col-lg-9</div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 bg-color_gray">col-md-4 這是電腦排版方式1</div>
+            <div class="col-md-4 bg-color_powderblue">col-md-4 這是電腦排版方式2</div>
+            <div class="col-md-4 bg-color_aqua">col-md-4 這是電腦排版方式3</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6 col-md-4 bg-primary">col-6 col-md-4 這是電腦排版方式1</div>
+            <div class="col-6 col-md-4 bg-secondary">col-6 col-md-4 這是電腦排版方式2</div>
+            <div class="col-6 col-md-4 bg-success">col-6 col-md-4 這是電腦排版方式3 錯誤示範，會被擠下來</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-2 bg-info">col2為正常位置</div>
+            <div class="col-md-4 offset-2 bg-primary">col4為偏移2位置，偏移的位置屬於此欄的</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3 offset-3 bg-success">col-3為偏移3位置</div>
+            <div class="col-3 offset-1 bg-danger">col-3為偏移1位置</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6 offset-4 bg-secondary">col6為徧移4位置</div>
+            <div class="col-sm-4 bg-info">col4正常位置</div>
+        </div>
+    </div>
+
+
+
+    <!-- jquery and bootstrap javascript -->
+    <script type="text/javascript" src="./bootstrap-4.6.2-dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
