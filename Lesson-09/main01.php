@@ -1,17 +1,17 @@
-<?php require_once("./Connection/dbset.php");?>
+<?php require_once("./Connection/dbset.php") ?>
 <?php
-if(isset($_POST['flag'])){
-    $cname=$_POST['cname'];
-    $tel=$_POST['tel'];
-    $email=$_POST['email'];
-    $address=$_POST['address'];
-    $message=$_POST['message'];
-    $SQLstring="INSERT INTO feedback (cname, tel, email, address, message) VALUES ('$cname','$tel','$email','$address','$message')";
-    // $SQLstring=sprintf("INSERT INTO feedback (cname,tel,email,address, message) VALUES('%s','%s','%s','%s','%s')",$cname,$tel,$email,$address,$message);
-    $result=mysqli_query($link,$SQLstring);
-    if($result){
+if (isset($_POST['flag'])) {
+    $cname = $_POST['cname'];
+    $tel = $_POST['tel'];
+    $email = $_POST['email'];
+    $address = $_POST['address'];
+    $message = $_POST['message'];
+    // $SQLstring="INSERT INTO feedback (cname, tel, email, address, message) VALUES('$cname','$tel','$email','$address','$message')";
+    $SQLstring = sprintf("INSERT INTO feedback (cname,tel,email,address, message) VALUES('%s','%s','%s','%s','%s')", $cname, $tel, $email, $address, $message);
+    $result = mysqli_query($link, $SQLstring);
+    if ($result) {
         echo "<script>alert('謝謝您～您的資料已成功送出，我們會儘快與您聯絡。');</script>";
-    }else{
+    } else {
         echo "<script>alert('錯誤！資料無法寫入，請與管理員聯絡。');</script>";
     }
 }
@@ -30,100 +30,103 @@ if(isset($_POST['flag'])){
     <link rel="stylesheet" href="./morphext.css">
     <link rel="stylesheet" href="./website01.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            padding: 0px;
+            margin: 0px;
+            height: 3000px;
+        }
+
+        #mainmenu {
+            position: relative;
+            width: 100%;
+            height: 3000px;
+            background-image: url("images/pic86.jpg");
+            background-attachment: fixed;
+            z-index: 999999;
+        }
+    </style>
 </head>
 
 <body>
-    <section id="mainmenu">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php"><img src="./images/lincanLogo.png" alt="Logo" class="img-fluid"></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">測試中心</a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item dropdown-submenu">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Submenu-1</a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item"><a href="#">Item-1</a></li>
-                                    <li class="dropdown-item"><a href="#">Item-2</a></li>
-                                    <li class="dropdown-item"><a href="#">Item-3</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-item dropdown-submenu">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Submenu-2</a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item"><a href="#">Item-1</a></li>
-                                    <li class="dropdown-item"><a href="#">Item-2</a></li>
-                                    <li class="dropdown-item"><a href="#">Item-3</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#production">站長推薦</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sportlogo">品牌精選</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#buyrules">服務說明</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">聯絡我們</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                            會員中心
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">訂單查詢</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">退訂／退款查詢</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">現金積點查詢</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">折價券查詢</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">登入</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">註冊</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">登出</a>
-                    </li>
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="jumbotron">
-                    <h1 class="display-4">！讓我們一起動起來！</h1>
-                    <p class="lead">在運動出汗的過程中，皮膚的新陳代謝加快，毒素排出體外，而且出汗還能夠幫助清潔毛孔，有效護膚美容。</p>
-                    <hr class="my-4">
-                    <p>讓我們提供一雙好的運動鞋來幫助你。</p>
-                    <p>林肯運動鞋專賣店-電子商店</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Shop more</a>
-                </div>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php"><img src="./images/lincanLogo.png" alt="Logo" class="img-fluid"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">測試中心</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item dropdown-submenu">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Submenu-1</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#">Item-1</a></li>
+                                <li class="dropdown-item"><a href="#">Item-2</a></li>
+                                <li class="dropdown-item"><a href="#">Item-3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item dropdown-submenu">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Submenu-2</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#">Item-1</a></li>
+                                <li class="dropdown-item"><a href="#">Item-2</a></li>
+                                <li class="dropdown-item"><a href="#">Item-3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#production">站長推薦</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sportlogo">品牌精選</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#buyrules">服務說明</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">聯絡我們</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                        會員中心
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">訂單查詢</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">退訂／退款查詢</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">現金積點查詢</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">折價券查詢</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">登入</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">註冊</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">登出</a>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <section id="mainmenu">
+
     </section>
     <hr>
     <section id="production">
@@ -502,6 +505,16 @@ if(isset($_POST['flag'])){
             $('.dropdown').on("hidden.bs.dropdown", function() {
                 //hide any open menus when parent closes
                 $('.dropdown-menu.show').removeClass('show');
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function() {
+                var scroll_position = $(window).scrollTop() / 2
+                $('#mainmenu').css({
+                    'background-position-x': -scroll_position + 'px'
+                });
             });
         });
     </script>
