@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+
+body{
+    font-family: Arial, 'Noto Serif TC', 'sans-serif';
+    font-size: 14pt;
+    padding-top: 60px;
+}
+
+.navbar{
+    padding: 0px 70px 0px 0px;
+    background-color: #C7000A;
+}
+
+.nav-link{
+    color: #FFFFFF !important;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+nav a img{
+    margin-left: 10px;
+}
+
+.dropdown-item{
+    color: #337AB7 !important;
+    font-size: larger;
+}
+
+.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:focus{
+    color: #FFFFFF !important;
+    background-color: #337AB7;
+}
+
+#content{
+    margin-top: 10px;
+}
+
+.row .col-md-2 .sidebar{
+    border: 2px solid #DFDFDF;
+    background-color: #F7F7F7;
+}
+
+.sidebar{
+    padding: 5px;
+}
+
+.card-body table td:hover{
+    background-color: antiquewhite;
+}
+
+.card-body{
+    padding: 0px;
+}
+
+.table{
+    margin-bottom: 0px;
+}
+
+.table td{
+    border-top: none;
+    border-bottom: 1px solid #DEE2E6;
+    padding-left: 2.5rem;
+}
+
+td>em{
+    margin-right: 5px;
+}
+
+#aboutme{
+    background-color: #31384A;
+    color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#last-data{
+    height: 100px;
+    background-color: #B4B4B4;
+    padding-top: 10px;
+}
