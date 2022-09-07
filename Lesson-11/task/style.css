@@ -1,0 +1,66 @@
+body{
+    font-size: 16pt;
+    padding-top: 100px;
+}
+
+.navbar{
+    padding: 0px 70px 0px 10px;
+    margin-bottom: 200px;
+    background-color: mediumaquamarine !important;
+}
+
+
+nav a img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.navbar-nav li{
+    margin-right: 10px;
+}
+
+.accordion .card .btn h4{
+    color: mediumaquamarine;
+    font-weight: bolder;
+}
+.accordion .card .btn:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.collapse .table tbody tr td a{
+    color: mediumaquamarine;
+}
+.collapse .table tbody tr td a:hover{
+    text-decoration: none;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 50vh;
+}
+
+/* diaries */
+#diaries h3{
+    color: mediumaquamarine;
+    font-weight: bolder;
+}
+
+#diary{
+    display: flex;
+}
+
+/* scontent */
+#scontent .col-md-3 a, #scontent .col-md-3 h3, #scontent .col-md-3 i{
+    text-decoration: none;
+    color: mediumaquamarine;
+}
+#scontent .col-md-3 a:hover{
+    opacity: 0.6;
+}
+
+/* footer */
+#footer{
+    background-color: mediumaquamarine;
+}
