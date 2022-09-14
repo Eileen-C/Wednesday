@@ -13,7 +13,9 @@ $pyclass01 = $link->query($SQLstring);
 $i = 1; //控制編號順序的變數
 ?>
 <div class="accordion" id="accordionExample">
-    <?php while ($pyclass01_Rows = $pyclass01->fetch()) { ?>
+    <?php while ($pyclass01_Rows = $pyclass01->fetch()) {
+        $i = $pyclass01_Rows['classid'];
+    ?>
         <div class="card">
             <div class="card-header" id="headingOne<?php echo $i; ?>">
                 <h2 class="mb-0">
@@ -24,18 +26,28 @@ $i = 1; //控制編號順序的變數
             </div>
 
             <?php
+            if (isset($_GET['classid'])) { //如果使用類別查詢需取得上一層類別
+                $SQLstring = "SELECT uplink FROM pyclass WHERE level = 2 AND classid =".$_GET['classid'];
+                $classid_rs = $link->query($SQLstring);
+                $data = $classid_rs->fetch();
+                $ladder = $data['uplink'];
+            } else {
+                $ladder = 1;
+            }
+
             //列出產品類別第二層
             $SQLstring = sprintf("SELECT * FROM pyclass WHERE level=2 AND uplink=%d ORDER BY sort", $pyclass01_Rows['classid']);
             $pyclass02 = $link->query($SQLstring);
             ?>
 
-            <div id="collapseOne<?php echo $i; ?>" class="collapse<?php echo ($i == 1) ? 'show' : ''; ?>" aria-labelledby="headingOne<?php echo $i; ?>" data-parent="#accordionExample">
+            <div id="collapseOne<?php echo $i; ?>" class="collapse <?php echo ($i == $ladder) ? 'show' : ''; ?>" aria-labelledby="headingOne<?php echo $i; ?>" data-parent="#accordionExample">
                 <div class="card-body">
                     <table class="table">
                         <tbody>
                             <?php while ($pyclass02_Rows = $pyclass02->fetch()) { ?>
                                 <tr>
-                                    <td><em class="fa <?php echo $pyclass02_Rows['fonticon']; ?> fa-fw pr-2"></em><a href="#"><?php echo $pyclass02_Rows['cname']; ?></a></td>
+                                    <td><em class="fa <?php echo $pyclass02_Rows['fonticon']; ?> fa-fw pr-2"></em><a href="drugstore.php?classid=<?php echo $pyclass02_Rows['classid']; ?>"><?php echo $pyclass02_Rows['cname']; ?></a>
+                                    </td>
                                 </tr>
                             <?php } ?>
                         </tbody>
