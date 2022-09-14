@@ -1,4 +1,9 @@
 <?php
+//判斷$num是否等於$chkPoint，若是則回傳active，可用於設定起始分頁carousel
+function activeShow($num, $chkPoint)
+{
+    return (($num == $chkPoint) ? "active" : "");
+}
 function buildNavigation( $pageNum_Recordset1, $totalPages_Recordset1, $prev_Recordset1, $next_Recordset1, $separator = " | ", $max_links = 10, $show_page = true, $selmode = 1, $sname ) {
 	$gmaxRows = "maxRows_" . $sname;
 	$gtotalRows = "totalRows_" . $sname;
