@@ -1,7 +1,10 @@
 <?php
 $level1Open = "";
 $level2Open = "";
-if (isset($_GET['level']) && isset($_GET['classid'])) {
+if(isset($_GET['search_name'])){
+    //使用關鍵字查詢
+    $level1Open ='<li class="breadcrumb-item active" aria-current="page">關鍵字查詢：'.$_GET['search_name'].'</li>';
+}elseif (isset($_GET['level']) && isset($_GET['classid'])) {
     //選擇第一層類別
     $SQLstring = sprintf("SELECT * FROM pyclass WHERE level = %d AND classid = %d", $_GET['level'], $_GET['classid']);
     $classid_rs = $link->query($SQLstring);

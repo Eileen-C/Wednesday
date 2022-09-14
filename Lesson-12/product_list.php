@@ -7,7 +7,10 @@ if (isset($_GET['pageNum_rs'])) {
 }
 $startRows_rs = $pageNum_rs * $maxRows_rs;
 
-if(isset($_GET['level']) && $_GET['level']==1){
+if(isset($_GET['search_name'])){
+    //使用關鍵字查詢
+    $queryFirst = sprintf("SELECT * FROM product,product_img,pyclass WHERE p_open = 1 AND product_img.sort = 1 AND product.p_id = product_img.p_id AND product.classid = pyclass.classid AND product.p_name LIKE '%s' ORDER BY product.p_id DESC",'%'.$_GET['search_name'].'%');
+}elseif(isset($_GET['level']) && $_GET['level']==1){
     //使用第一層類別查詢
     $queryFirst = sprintf("SELECT * FROM product,product_img,pyclass WHERE p_open=1 AND product_img.sort=1 AND product.p_id=product_img.p_id AND product.classid=pyclass.classid AND pyclass.uplink='%d' ORDER BY product.p_id DESC", $_GET['classid']);
 }elseif (isset($_GET['classid'])) {
