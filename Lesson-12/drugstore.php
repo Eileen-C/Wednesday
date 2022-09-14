@@ -27,7 +27,9 @@
                     <!-- 建立類別分項 -->
                     <?php require_once('breadcrumb.php'); ?>
                     <!-- product藥粧商品 -->
-                    <?php require_once("product_list.php"); ?>
+                    <?php require_once("product_list.php"); 
+                    ?>
+                    
                 </div>
             </div>
 

@@ -110,3 +110,8 @@ td>em{
     margin-right: -15px;
     margin-left: -15px;
 } */
+
+/* goods產品詳情頁面 */
+.card .row.mt-2 .col-md-4 a>img:hover{
+    border: lightpink 1px solid;
+}
